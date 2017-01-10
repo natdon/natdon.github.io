@@ -1,0 +1,284 @@
+﻿<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>東周列萌志</title>
+
+    <!-- Global stylesheets -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">-->
+    <link href="css/minified/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <!-- /global stylesheets -->
+
+
+    <!--<link href="css/nav.css" rel="stylesheet" />-->
+    <link rel="stylesheet" href="css/dz.css">
+
+    <!-- Core JS files -->
+    <script type="text/javascript" src="js/lib/jquery.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+
+    <link rel="prefetch" href="image/role/t_kong.png" />
+    <link rel="prefetch" href="image/role/t_mo.png" />
+    <link rel="prefetch" href="image/role/t_chuang.png" />
+    <link rel="prefetch" href="image/role/t_huei.png" />
+    <link rel="prefetch" href="image/role/t_han.png" />
+    <link rel="prefetch" href="image/role/t_zo.png" />
+    <link rel="prefetch" href="image/role/w_main.jpg" />
+    <link rel="prefetch" href="image/role/t_huang.png" />
+    <link rel="prefetch" href="image/role/t_zoyan.png" />
+    <link rel="prefetch" href="image/role/t_xunzi.png" />
+
+    <link rel="prefetch" href="http://121.42.24.198/music/role/dao.mp3" />
+    <link rel="prefetch" href="http://121.42.24.198/music/role/fa.mp3" />
+    <link rel="prefetch" href="http://121.42.24.198/music/role/ming.mp3" />
+    <link rel="prefetch" href="http://121.42.24.198/music/role/mo.mp3" />
+    <link rel="prefetch" href="http://121.42.24.198/music/role/ru.mp3" />
+    <link rel="prefetch" href="http://121.42.24.198/music/role/yinyang.mp3" />
+</head>
+<body>
+<div class="container-fuild role">
+    <nav class="navbar-default" role="navigation">
+        <a class="smalltitle" href="#"></a>
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#dz-navbar">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+        </div>
+        <div class="collapse navbar-collapse navbar-right" id="dz-navbar">
+            <ul class="navlist navtext" style="margin-right:5.1em;">
+                <li class="navitem">
+                    <div><a href="index.html" >首頁</a></div>
+                    <div class="navimg"/></div>
+                </li>
+                <li>
+                    <div><a href="story.html">簡介</a></div> 
+                    <div class="navimg"/></div>
+                </li>
+                <li class="active">
+                    <div><a href="role.html">角色</a></div> 
+                    <div class="navimg"/></div>
+                </li>
+                <li>
+                    <div><a href="system.html">系統</a></div> 
+                    <div class="navimg"/></div>
+                </li>
+                <li>
+                    <div><a href="media.html">影音</a></div> 
+                    <div class="navimg"/></div>
+                </li>
+                <li>
+                    <div><a href="download.html">下載</a></div> 
+                    <div class="navimg"/></div>
+                </li>
+                <li>
+                    <div><a href="team.html">團隊</a></div> 
+                    <div class="navimg"/></div>
+                </li>
+                <li>
+                    <div><a href="http://3chistudio.com/blog" target="blank">日誌</a></div> 
+                    <div class="navimg"/></div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="row bg">
+        <div class="mask"></div>
+        <div class="rolepic" _char="ru"></div>
+        <div class="rolepic" _char="dao"></div>
+        <div class="rolepic" _char="mo"></div>
+        <div class="rolepic" _char="ming"></div>
+        <div class="rolepic" _char="fa"></div>
+        <div class="rolepic" _char="yinyang"></div>
+        <div class="rolepic" _char="huang"></div>
+        <div class="rolepic" _char="zoyan"></div>
+        <div class="rolepic" _char="xunzi"></div>
+        <div id="mainpic" class="mainpic"></div>
+
+        
+        <div class="mark"></div>
+        <div class="top decobar"></div>
+        <div class="bottom decobar"></div>
+        <div class="title visible-lg"></div>
+        <div class="voice col-md-2 col-md-offset-8">
+            <a role="button" onclick="autoPlay()" class="voice-btn">
+                <span class="visible-lg">配音試聽</span>
+                <i class="glyphicon glyphicon-volume-up"></i>
+            </a>
+            <audio id="audiovoice" src="" controls="controls" loop="false" hidden="true"></audio>
+        </div>
+
+
+    </div>
+    <div>
+        <div class="row">
+            <div class="col-md-8 col-xs-12">
+                <div class="role-btn-group">
+                    <div class="role-btn ru col-md-1" _char="ru">
+                        <div class="btn"></div>
+                        <span class="circle"></span>
+                    </div>
+
+                    <div class="role-btn mo col-md-1" _char="mo">
+                        <div class="btn"></div>
+                        <span class="circle"></span>
+                    </div>
+
+                    <div class="role-btn dao col-md-1" _char="dao">
+                        <div class="btn"></div>
+                        <span class="circle"></span>
+                    </div>
+
+                    <div class="role-btn ming col-md-1" _char="ming">
+                        <div class="btn"></div>
+                        <span class="circle"></span>
+                    </div>
+
+                    <div class="role-btn fa col-md-1" _char="fa">
+                        <div class="btn"></div>
+                        <span class="circle"></span>
+                    </div>
+
+                    <div class="role-btn yinyang col-md-1" _char="yinyang">
+                        <div class="btn"></div>
+                        <span class="circle"></span>
+                    </div>
+
+                    <div class="role-btn zhujue col-md-1" _char="zhujue">
+                        <div class="btn"></div>
+                        <span class="circle"></span>
+                    </div>
+
+                    <div class="role-btn peijue col-md-1" _char="peijue">
+                        <div class="btn"></div>
+                        <span class="circle"></span>
+                        <div id="rolepanel" class="rolepanel">    
+                            <div>
+                                
+                                <a class="pei"  onclick="charClick(event, 'huang')"> 黃歇</a>
+                            </div>
+                            <div>
+                                
+                                <a class="pei" onclick="charClick(event, 'xunzi')"> 荀子</a>
+                            </div>
+                            <div>
+                                
+                                <a class="pei" onclick="charClick(event, 'zoyan')"> 鄒衍</a>
+                            </div>
+
+                            <div class="arrow"></div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+            </div>
+            <div class="col-xs-12 col-md-4 gamedesc ">
+                <p class="m-t-30 p-r-30 text-dark">
+                    全年齡女性向戀愛冒險遊戲(AVG/ADV)，可攻略儒、墨、道、名、法、陰陽六家。試玩版一周目約一小時，包含共通線全部、六組CG、六種階段性小結局（前五家&Terrible End）
+                </p>
+            </div>
+        </div>
+        <footer class="row">
+            <div class="col-sm-12 text-center m-t-30">
+
+                <div class="btn-group footer">
+                    <strong>版權所有© 2016 離水三尺工作室</strong>
+                    <a class="social-btn-plurk" role="button" href="http://www.plurk.com/dongzhoulemon" target="blank"></a>
+                    <a class="social-btn-sina" role="button" href="http://weibo.com/sfvie" target="blank"></a>
+                    <a class="social-btn-fb" role="button" href="https://www.facebook.com/3chi.DongZhou" target="blank"></a>
+                    <p></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</div>
+    <script type="text/javascript">
+        var selected = (function(){
+            this.character = 'ru';
+            return this;
+        })();
+
+        var voice={
+            'ru': 'http://121.42.24.198/music/role/ru.mp3',
+            'mo': 'http://121.42.24.198/music/role/mo.mp3',
+            'dao': 'http://121.42.24.198/music/role/dao.mp3',
+            'ming': 'http://121.42.24.198/music/role/ming.mp3',
+            'fa': 'http://121.42.24.198/music/role/fa.mp3',
+            'yinyang': 'http://121.42.24.198/music/role/yinyang.mp3',
+            'zhujue':'',
+            'xunzi':'',
+            'zoyan':'',
+            'huang':''
+        }
+
+        function autoPlay() {
+            $('#audiovoice').attr('src',voice[selected.character]).promise()
+            .done(function(){
+                var _this = this;
+                $(_this)[0].play();
+                $(_this)[0].loop = false;
+            });
+        };
+
+        function charClick( event, _char ){
+            
+            $('.role-btn').removeClass('active').promise()
+            .done(function(){
+                $('.role-btn.'+_char).addClass('active');
+            });
+
+            $('.rolepic').css('opacity',0).promise()
+            .done(function(){           
+                switch(_char){
+                    case 'ru':
+                    case 'mo':
+                    case 'dao':
+                    case 'ming':
+                    case 'fa':
+                    case 'yinyang':
+                        $('.voice').show();
+                        $('.mainpic').css('opacity',0);
+                        $('.rolepic[_char="'+_char +'"]').css('opacity',1);
+                        break;
+                    case 'peijue':
+                        _char='huang';
+                    case 'huang':
+                    case 'xunzi':
+                    case 'zoyan':
+                        $('.voice').hide();
+                        $('.mainpic').css('opacity',0);
+                        $('.rolepic[_char="'+_char +'"]').css('opacity',1);
+                        break;
+                    case 'zhujue':
+                        $('.voice').hide();
+                        $('.rolepic').css('opacity',0);
+                        $('.mainpic').css('opacity',1.0);
+                        break;
+                    default:
+                        break;
+                };
+
+            });
+            if (event) event.stopPropagation();
+            selected.character = _char;
+        };
+
+        $(document).ready(function(){
+            $('.role-btn').click(function(event){
+                var character = $(this).attr('_char');
+                charClick(event, character);
+            });
+            charClick(null, selected.character);
+        });
+    </script>
+
+ </body>
+</html>
